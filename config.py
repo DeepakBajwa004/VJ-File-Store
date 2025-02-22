@@ -18,13 +18,13 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+API_ID = int(environ.get("API_ID", "21283994"))
+API_HASH = environ.get("API_HASH", "48a6742d2bc2f1b914f6243ccd1cccab")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7700476367:AAEVo-aFe0aaZZoJLNxBiSA2n6gxjTRI6RU")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+PICS = (environ.get('PICS', 'https://i.ibb.co/ZpFzhybQ/images.png')).split() # Bot Start Picture
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7077129266').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "MRxFileStoreRobot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -35,8 +35,8 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "techvjbotz")
+DB_URI = environ.get("DB_URI", "mongodb+srv://igsweety293:N8fluQM26K5biQb1@cluster0.e7zis.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_NAME = environ.get("DB_NAME", "igsweety293")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
